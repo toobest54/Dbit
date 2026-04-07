@@ -1,18 +1,21 @@
 {
-    "name": "DanceRobot",
-    "version": "1.0.9",
-    "description": "DanceRobot:bit from clb",
-    "license": "MIT",
-    "dependencies": {
-        "core": "*",
-        "radio": "*"
-    },
-    "files": [
-        "README.md",
-        "Dbit.ts"
-    ],
-    "testFiles": [
-        "test.ts"
-    ],
-    "public": false
+  "name": "dancerobot",
+  "version": "1.0.9",
+  "description": "DanceRobot:bit from clb",
+  "license": "MIT",
+  "dependencies": {
+    "core": "*",
+    "radio": "*"
+  },
+  "files": [
+    "Dbit.ts"
+  ],
+  "testFiles": [
+    "test.ts"
+  ],
+  "public": true,
+  "supportedTargets": [
+    "microbit"
+  ],
+  "preferredEditor": "tsprj"
 }
