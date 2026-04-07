@@ -3,9 +3,9 @@ namespace Dbit {
 
     export enum PWMChn {
         //% blockId="Right_leg" block="右侧腿"
-        Right_Leg = 8,
+        Right_Leg = 5,
         //% blockId="Right_Foot" block="右侧脚尖"
-        Right_Foot = 9,
+        Right_Foot = 6,
         //% blockId="Left_Foot" block="左侧脚尖"
         Left_Foot = 10,
         //% blockId="Left_leg" block="左侧腿"
