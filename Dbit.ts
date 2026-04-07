@@ -1,5 +1,3 @@
-
-//
 //% weight=5 color=#1BAFEA icon="\uf1b2"
 namespace Dbit {
 
@@ -357,18 +355,13 @@ namespace Dbit {
         pins.i2cWriteBuffer(PCA9685_ADDRESS, buf);
     }
 
-    /**
+    /*
      * Set servo to degree(0~180),
         right_leg = CH6,
         right_foot = CH7,
         left_foot = CH8,
         left_leg = CH9
     */
-    //% blockId=sloth_servo_write block="设置舵机 %channel|角度 %degree"
-    //% advanced=true
-    //% weight=50
-    //% degree.min=0 degree.max=180
-    //% channel.fieldEditor="gridpicker" channel.fieldOptions.columns=4
     export function servo_write(channel: PWMChn, degree: number): void {
         if (degree < 181 && degree > -1) {
             // 50hz: 20,000 us
@@ -378,7 +371,7 @@ namespace Dbit {
         }
     }
 
-    /**
+    /*
      * Servo move, input 4 elements array, to move all servo
      * @param speed ; eg: 50
     */
@@ -388,7 +381,7 @@ namespace Dbit {
         }
     }
 
-    /**
+    /*
      * Servo move, input 4 elements array, to move all servo
      * @param speed ; eg: 50
     */
@@ -413,7 +406,7 @@ namespace Dbit {
             }
 
             for (let i = 0; i < max_delta; i++) {
-                for (let j = 0; j <= servos.length; j++) {
+                for (let j = 0; j < servos.length; j++) {
                     if (i % steps[j] == 0) {
                         if (servo_positions[j] != targets[j]) {
                             servo_positions[j] = servo_positions[j] + (delta[j] / Math.abs(delta[j]));
