@@ -5,11 +5,11 @@ namespace Dbit {
         //% blockId="Right_leg" block="右侧腿"
         Right_Leg = 5,
         //% blockId="Right_Foot" block="右侧脚尖"
-        Right_Foot = 6,
+        Right_Foot = 10,
         //% blockId="Left_Foot" block="左侧脚尖"
-        Left_Foot = 7,
+        Left_Foot = 11,
         //% blockId="Left_leg" block="左侧腿"
-        Left_Leg = 8,
+        Left_Leg = 12,
         CH1 = 0,
         CH2 = 1,
         CH3 = 2,
@@ -23,7 +23,6 @@ namespace Dbit {
         CH11 = 14,
         CH12 = 15
     }
-
     let right_leg = PWMChn.Right_Leg
     let right_foot = PWMChn.Right_Foot
     let left_foot = PWMChn.Left_Foot
