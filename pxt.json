@@ -1,6 +1,6 @@
 {
   "name": "dancerobot",
-  "version": "1.1.13",
+  "version": "1.1.15",
   "description": "DanceRobot:bit from clb",
   "license": "MIT",
   "dependencies": {
@@ -8,7 +8,7 @@
     "radio": "*"
   },
   "files": [
-    "Dbit.ts"
+    "sloth.ts"
   ],
   "testFiles": [
     "test.ts"
