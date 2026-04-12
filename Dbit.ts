@@ -389,6 +389,10 @@ namespace sloth {
      * Servo move, input 4 elements array, to move all servo
      * @param speed ; eg: 50
     */
+    //% blockId=sloth_servo_move block="设置舵机移动到 %target| %speed|dps"
+    //% weight=40
+    //% advanced=true
+    //% speed.min=1 speed.max=100
     export function servo_move(targets: number[], speed: number = 50): void {
         let delta = [0, 0, 0, 0]
         let steps = [0, 0, 0, 0]
